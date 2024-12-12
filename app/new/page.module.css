@@ -1,0 +1,160 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background);
+}
+
+.stepIndicator {
+  text-align: center;
+  color: #000000;
+}
+
+.content {
+  width: 22rem;
+  height: 60vh;
+  padding: 2rem;
+  background-color: var(--pass);
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.step h1 {
+  color: var(--text);
+}
+
+.subText {
+  font-size: 1rem;
+  font-weight: 100;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  padding: 0.5em 1em;
+  background-color: var(--button);
+  color: var(--button-text);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.typeButton:hover {
+  border-color: #007bff;
+  background: #f8f9fa;
+}
+
+.timeInputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.timeInputs div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.timeInputs label {
+  font-weight: bold;
+  color: #333;
+}
+
+.timeInputs input {
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.reasonInput {
+  width: 100%;
+  min-height: 150px;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  resize: vertical;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.teachersList {
+  display: grid;
+  gap: 10px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.teacherButton {
+  width: 100%;
+  padding: 15px;
+  text-align: left;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.teacherButton:hover {
+  background: #f8f9fa;
+  border-color: #007bff;
+}
+
+.nextButton {
+  width: 100%;
+  padding: 15px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.nextButton:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.nextButton:not(:disabled):hover {
+  background: #0056b3;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  font-size: 18px;
+  color: #666;
+}
